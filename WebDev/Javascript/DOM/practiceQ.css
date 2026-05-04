@@ -1,0 +1,9 @@
+.red{
+    color : red;
+}
+.box{
+    /* height : 130px;
+    width : 130px; */
+    background-color: pink;
+    border : solid black 5px;
+}

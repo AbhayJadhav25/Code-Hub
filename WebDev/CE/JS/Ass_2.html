@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea{
+            width : 70%;
+            height : 100px;
+            margin-bottom : 10px;
+        }
+        button{
+            padding : 8px 10px;
+            margin-top : 5px;
+            margin-left : 10px;
+        }
+        #result{
+            margin-top : 20px;
+            font-weight : bold;
+        }
+        input{
+            height : 30px;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="textInput" placeholder="Enter text"></textarea><br>
+    <button onclick="wordCount()">Word Count</button> 
+    <button onclick="charCount()">Character Count</button>
+    <button onclick="toUpper()">UpperCase</button>
+    <button onclick="toLower()">LowerCase</button>
+    <button onclick="spaceRemove()">Remove extra space</button>
+    <br><br>
+    <label for="searchWord">Enter word to search : </label>
+    <input id="searchWord" placeholder="Enter word to search">
+    <button onclick="wordCheck()">Check word</button>
+
+    <div id="output"><b>Result : <br></b></div>
+
+    <script>
+        function getText(){
+            return document.getElementById("textInput").value;
+        }
+
+        function wordCount(){
+            let words = getText().trim().split(/\s+/);
+
+            let count = 0;
+
+            if(getText().trim()===""){
+                document.getElementById('output').innerText = "Word Count = "+count;
+            }else{
+                document.getElementById('output').innerText = "Word Count = "+words.length;
+            }
+        }
+
+        function charCount(){
+            let count = getText().length;
+
+            document.getElementById('output').innerText = "Total character = "+count;
+        }
+
+        function toLower(){
+            let text = getText().toLowerCase();
+             document.getElementById('output').innerText = "Lower Case  = "+text;
+        }
+
+        function toUpper(){
+            let text = getText().toUpperCase();
+            document.getElementById('output').innerText = "Lower Case  = "+text;
+        }
+
+        function spaceRemove(){
+            let text = getText().replace(/\s+/g," ")
+            document.getElementById('textInput').value = text;
+            document.getElementById('output').innerText = "Extra spaces removed";
+        }
+
+        function wordCheck(){
+            let text = getText().toLowerCase()
+            let word = document.getElementById('searchWord').value.toLowerCase();
+
+            if(text.includes(word)){
+                document.getElementById('output').innerText = "Word Found";
+            }else{
+                document.getElementById('output').innerText = "Word not Found";
+            }
+        }
+    </script>
+</body>
+</html>

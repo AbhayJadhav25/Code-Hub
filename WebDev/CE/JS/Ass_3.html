@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            text-size : 14px;
+            font-weight: 500;
+        }
+
+        input{
+            height : 20px;
+            width : 40%;
+            border : 2px solid black;
+        }
+        button{
+            padding : 5px 9px;
+        }
+        #account{
+            display : flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <label for="name">Account Holder Name : </label>
+    <input type="text" id="name" placeholder="Enter your name">
+    <br><br>
+    <label for="accNum">Account Number : </label>
+    <input type="text" id="accNum" placeholder="Enter account number">
+    <br><br>
+    <label for="balance">Initial Balance : </label>
+    <input type="text" id="balance">
+    <br><br>
+    <button onclick="createAccount()" id="account">Create Account</button>
+
+    <hr>
+    <label for="credit">Enter Amount to Deposit</label>
+    <input type="text" id="credit"><br>
+    <button onclick="creditAmount()">Credit</button>
+    <br><br>
+    <label for="credit">Enter Amount to withdraw</label>
+    <input type="text" id="debit"><br>
+    <button onclick="debitAmount()">Debit</button><br><br>
+
+    </br>
+    <button onclick="showBalance()">Show Account Details</button>
+
+    <p id="result"></p>
+
+    <script>
+        class BankAccount{
+            constructor(name , accNum , balance){
+                this.name = name;
+                this.accNum = accNum;
+                this.balance = balance;
+            }
+
+            deposit(amount){
+                this.balance = this.balance + Number(amount);
+            }
+
+            withraw(amount){
+                if(amount > this.balance){
+                    return "Insufficient Balance";
+                }
+                this.balance = this.balance - Number(amount);
+
+                return "Money withrawl successfully";
+            }
+
+            display(){
+                return "Account Holder Name : "+this.name
+                +"<br>Account Number :  "+this.accNum
+                +"<br>Account Balance : "+this.balance;
+            }
+        }
+
+        let account;
+        function createAccount(){
+            let name = document.getElementById('name').value;
+            let accNum = document.getElementById('accNum').value;
+            let balance = document.getElementById('balance').value;
+
+            account = new BankAccount(name,accNum,Number(balance));
+
+            document.getElementById('result').innerHTML = "Account Created Successfully";
+        }
+        function creditAmount(){
+            let amount = document.getElementById('credit').value;
+            account.deposit(Number(amount));
+
+            document.getElementById('result').innerHTML = "Amount Credited Successfully";
+        }
+
+        function debitAmount(){
+            let amount = document.getElementById('debit').value;
+            let msg = account.withraw(amount)
+
+            document.getElementById('result').innerHTML = msg;
+        }
+
+        function showBalance(){
+            let output = account.display();
+            document.getElementById('result').innerHTML = output;
+        }
+    </script>
+</body>
+</html>

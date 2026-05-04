@@ -1,0 +1,30 @@
+div{
+    height:100px;
+    width:200px;
+    background-color: red;
+    margin-bottom: 5px;
+    border: 2px solid black;
+    text-align:center;
+}
+#rotate{
+    background-color: aqua;
+    transform:rotate(-90deg );
+}
+#scale{
+    background-color: aquamarine;
+    /* transform:scale(0.5); */
+    /* transform:scaleX(2); */
+    transform:scaleY(0.5);
+    /* transform:scale3d(1.2); */
+}
+#translate{
+    background-color: blueviolet;
+    /* transform:translate(-30px); */
+    /* transform:translateX(30px); */
+    /* transform:translateY(40px); */
+}
+#skew{
+    background-color: brown;
+    transform:skew(30deg);
+    transform: skewX(20deg);
+}

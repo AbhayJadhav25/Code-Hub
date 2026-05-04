@@ -1,0 +1,13 @@
+div{
+    width:100px;
+    height:100px;
+    background-color:red;
+    /* background-color :rgba(255,231,0,0.2); */
+    /* opacity:0.4; */
+    transition: all 3s ease-in-out;
+}
+div:hover{
+    margin : auto;
+    background-color:blue;
+
+}

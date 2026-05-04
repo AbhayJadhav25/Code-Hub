@@ -1,0 +1,2 @@
+cally --> code inside function
+caller --> code inside main()

@@ -1,0 +1,24 @@
+p{
+    color:#964b00;
+    line-height:30px;
+}
+h1,h3,p{
+    text-align:center;
+}
+p{
+    color:red;
+}
+body{
+    font-family:Georgia;
+}
+a{
+    color:green;
+    text-decoration: none;
+}
+button{
+    background-color:white;
+    color:blueviolet;
+}
+h1 , span{
+    text-decoration: underline;;
+}

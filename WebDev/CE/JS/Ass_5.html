@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display : flex;
+            justify-content: center;
+            margin-top : 50px;
+        }
+        .container{
+            background: white;
+            padding : 20px;
+            border-radius : 10px;
+            width : 320px;
+            box-shadow : 0 0 10px rgba(0,0,0,0.1);
+        }
+        .container h4{
+            text-align: center;
+        }
+        .container hr{
+            margin-bottom : 20px;
+        }
+        .input-section{
+            display :flex;
+            gap :5px;
+        }
+        button{
+            padding : 8px;
+            cursor : pointer;
+        }
+        ul{
+            padding : 0;
+            list-style : none;
+            margin-top : 15px;
+        }
+        li{
+            background : #eee;
+            margin : 5px 0;
+            padding : 8px;
+            display : flex;
+            align-items : center;
+            justify-content: space-between;
+            border-radius : 5px;
+        }
+        .task-left{
+            display : flex;
+            align-items : center;
+            gap : 8px;
+        }
+        .completed{
+            text-decoration: line-through;
+            color: gray;
+        }
+        .delete-btn{
+            background :red;
+            color : white;
+            border : none;
+            padding : 5px 8px;
+            border-radius : 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4>To-Do List</h4>
+        <hr>
+        <div class="input-section">
+            <input type="text" id="task" placeholder="Enter Task">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script>
+        function addTask(){
+            let ip =  document.getElementById('task')
+            let input = document.getElementById('task').value.trim()
+
+            if(input === ""){
+                return alert("Enter Task.")
+            }
+            let li = document.createElement('li');
+            let leftDiv = document.createElement('div')
+            leftDiv.className = "task-keft";
+
+            let checkbox = document.createElement('input')
+            checkbox.type = "checkbox";
+
+            let span = document.createElement('span')
+            span.innerText = input
+
+            checkbox.onchange = function(){
+                span.classList.toggle("completed");
+            }
+            leftDiv.appendChild(checkbox)
+            leftDiv.appendChild(span)
+
+            let deleteBtn = document.createElement("button")
+            deleteBtn.innerText = "X"
+            deleteBtn.className = "delete-btn";
+            
+            deleteBtn.onclick = function(){
+                li.remove()
+            }
+
+            li.appendChild(leftDiv)
+            li.appendChild(deleteBtn)
+
+            document.getElementById('taskList').appendChild(li)
+
+            ip.value = "";
+        }
+    </script>
+</body>
+</html>

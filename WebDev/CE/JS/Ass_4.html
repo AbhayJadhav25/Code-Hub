@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family : Arial, Helvetica, sans-serif;
+            margin : 20px auto;
+        }
+        label{
+            font-size : 14px;
+        }
+        input{
+            width : 30%;
+            padding : 10px;
+        }
+        button{
+            padding : 8px 10px;
+            margin : auto;
+        }
+        #result{
+            font-weight : bold;
+            margin-top : 30px;
+        }
+    </style>
+</head>
+<body>
+    <label for="subjects">Enter Number of Subjects : </label>
+    <input type="number" id="subjects">
+    <button onclick = "showResult()">Show Result</button>
+    <div id="result"></div>
+
+    <script>
+        function showResult(){
+            let n = document.getElementById('subjects').value;
+        let total = 0;
+        for(let i = 1 ; i<=n ; i++){
+            let mark = Number(prompt('Enter Marks of subject '+i))
+
+            while(mark < 0 || mark>100){
+                mark = Number(prompt('Enter Mark between 0 to 100 : '));
+            }
+            total+=mark;
+        }
+        let average = total/n;
+
+        let grade;
+        if(average>=90){
+            grade = 'A'
+        }else if(average>=75){
+            grade = 'B'
+        }else if(average>=50){
+            grade='C'
+        }else{
+            grade = 'F'
+        }
+
+        let message ;
+        switch(grade){
+            case 'A':
+                message = 'Excellent'
+                break;
+
+            case 'B':
+                message = 'Good'
+                break;
+
+            case 'C':
+                message = 'Pass'
+                break;
+
+            case 'F': 
+                message = 'Fail'
+                break;
+        }
+
+        let result = "Number Of Subjects =  "+n
+                     +"<br>Total Marks  =  "+total
+                     +"<br>average  =  "+(average.toFixed(2))
+                     +"<br>Grade  =  "+grade
+                     +"<br>Message  =  "+message;
+
+        document.getElementById('result').innerHTML = result;
+        }
+        
+    </script>
+</body>
+</html>

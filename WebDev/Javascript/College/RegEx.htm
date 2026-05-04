@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family : Arial;
+      margin : 40px;
+    }
+
+    input , textarea{
+      width : 100%;
+      padding : 8px;
+      margin : 8px 0;
+    }
+
+    button{
+      padding : 8px 12px;
+      margin-top : 5px;
+    }
+
+    #result{
+      font-weight : bold;
+      margin-top : 15px; 
+    }
+  </style>
+</head>
+<body>
+  <h2>REGEX MIni Project</h2>
+
+  <h3>Email Validation</h3>
+  <input type="text" id = "email" placeholder="Enter gmail">
+  <button onclick = "validateEmail()">Validate Email</button>
+
+  <h3>Mobile Validation</h3>
+  <input type="text" id="mobile" placeholder="Enter 10-digit mobile number">
+  <button onclick="validateMobile()">Validate Mobile</button>
+
+  <h3>Password Validation</h3>
+  <input type="text" id="Password" placeholder="Enter Password">
+  <button onclick="validatePassword()">Validate Password</button>
+
+  <h3>Extract Numbers from text</h3>
+  <textarea type="textData" id = "textArea" placeholder="Enter text with numbers"></textarea>
+  <button onclick="extractNumbers()">Extract Numbers</button>
+
+  <h3>Remove Extra Spaces</h3>
+  <textarea id="spaceText" placeholder="Enter text with extra spaces"></textarea>
+  <button onclick="removeSpaces()">Clean Text</button>
+
+  <!-- Output Result Area -->
+   <div id="result"></div>
+ <script>
+  function validateEmail(){
+    let email = document.getElementById("email").value;
+
+    let pattern = /^[^\s@]+@[^\s@]+\.+[^\s@]+$/;
+
+    if(pattern.test(email)){
+      document.getElementById("result").innerText = "Valid Email";
+    }else{
+      document.getElementById("result").innerText = "Not Valid Email";
+    }
+  }
+
+  function validateMobile(){
+    let mobile = document.getElementById("mobile").value;
+    let pattern = /^\d{10}$/
+
+     if(pattern.test(mobile)){
+      document.getElementById("result").innerText = "Number Valid";
+    }else{
+      document.getElementById("result").innerText = "Number not valid";
+    }
+  }
+
+  function validatePassword(){
+    let password = document.getElementById("Password").value;
+    let pattern = /^(?=. *[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&*?]).{8,}$/;
+
+    if(pattern.test(password)){
+      document.getElementById("result").innerText = "Password Valid";
+    }else{
+      document.getElementById("result").innerText = "Password must contains 8 character , one special symbol , one uppercase and one lowercase character.";
+    }
+  }
+
+  function extractNumbers(){
+    let text = document.getElementById("textArea").value;
+    let numbers = text.match(/\d+/g);
+
+    if(numbers){
+      document.getElementById("result").innerText = "Numbers Found : " +numbers.join(", ");
+    }else{
+      document.getElementById("result").innerText = "Numbers Not Found";
+    }
+  }
+
+  function removeSpaces(){
+    let text = document.getElementById("spaceText").value;
+    let res = text.replace(/\s+/g , " ")
+    
+    document.getElementById("result").innerText = res;
+  }
+ </script>
+</body>
+</html>

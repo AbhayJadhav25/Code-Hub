@@ -1,0 +1,59 @@
+#box{
+    height:150px;
+    width:750px;
+    background-color: aqua;
+    color:black;
+    animation-name:Animation;
+    animation-duration:8s;
+    animation-delay:0;
+    animation-timing-function:ease-in;
+    animation-direction:normal;
+    animation-iteration-count:infinite;
+    position:relative;
+}
+/* @keyframes widthAnimation{
+    from{
+        background-color:aqua;
+        width:250px;
+        font-size:3.5em;
+    }
+    to{
+        background-color:yellow;
+        width:400px;
+        font-size:3.5em;
+    }
+} */
+
+/* @keyframes Animation{
+    0%{
+        background-color:green;
+        width:150px;
+        font-size:1.5em;
+    }
+    50%{
+        background-color:orange;
+        width:300px;
+        font-size:2.5em;
+        color:red;
+    }
+    100%{
+        background-color:violet;
+        width:450px;
+        font-size:3.5em;
+        color:yellow;
+        transform:rotate(45deg);
+    }
+} */
+
+@media(min-width:300px) and (max-width:400px){
+    #box{
+        background-color:brown;
+        font-size:4.5em;
+        color:blueviolet;
+        transform:scale(3);
+        width:400px;
+    }
+    h1{
+        font-size:10px;
+    }
+}

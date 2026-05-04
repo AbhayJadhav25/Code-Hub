@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Q2</title>
+</head>
+<body>
+    <form action="/action">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="fname">
+        </div>
+
+        <div>
+            <label for="sex">Sex: </label>
+            <input type="radio" id="male" name="sex" value="m">
+            <label for="male">Male</label>  
+            <input type="radio" id="female" name="sex" value="f">
+            <label for="female">Female</label>       
+        </div>
+        <div>
+            <label>Country:</label>
+            <select name="country" id="ctr">
+                <option value="India" name="country">India</option>
+                <option value="USA" name="country">USA</option>
+                <option value="Bhutan" name="country">Bhutan</option>
+                <option value="Nepal" name="country">Nepal</option>
+            </select>
+        </div>
+        <div>
+            <label for="message">Message: </label><br>
+            <textarea name="message" id="message" row="3" cols="20"></textarea>
+            <br><br>
+        </div>
+        <input type="checkbox" id="subscire" name="subscribe">
+        <label for="subscribe">Subscribe</label>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

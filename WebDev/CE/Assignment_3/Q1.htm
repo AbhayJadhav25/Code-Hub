@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding : 10px;
+            font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #container{
+            display : flex ;
+        }
+        #cities{
+            width : 50%;
+            height : 300px;
+            background-color : red;
+            justify-content: center;
+            align-items :center;
+        }
+        #place{
+            display : felx;
+            justify-content: center;
+            align-items: center;
+            width : 50%;
+            height : 300px;
+            background-color : gray;
+        }
+        #place li{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0px;
+            list-style-position: inside;
+        }
+        ul{
+            align-content: center;
+            line-height : 3;
+        }
+    </style>
+</head>
+<body>
+        <h1 style="color : orangered;font-weight: bold;text-align:center">Tourist Information Portal</h1>
+        <div id="container">
+            <div id = "cities">
+            <ul>
+                <li id="pune" onclick="showPlaces('pune')">Pune</li>
+                <li onclick="showPlaces('mumbai')">Mumbai</li>
+                <li onclick="showPlaces('delhi')">Delhi</li>
+            </ul>
+        </div>
+        <div id="place">
+        </div>
+        </div>
+    <script>
+        let data = {
+            pune : ["Shaniwar Wada" , "Deshpande Garden" , "Fregusson College","Dagdusheth Temple"],
+            mumbai : ["Beach" , "Marine Drive"],
+            delhi : ["Red fort" , "India gate"]
+        };
+        
+        function showPlaces(city){
+            let places= data[city]
+
+            let output = ""
+
+            for(let place of places){
+                output+="<li>"+place+"</li>"
+            }
+            document.getElementById("place").innerHTML = output
+        }
+        
+    </script>
+</body>
+</html>

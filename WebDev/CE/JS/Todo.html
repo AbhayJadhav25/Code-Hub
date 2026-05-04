@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family : arial;
+            background : #f4f4f4;
+            display : flex;
+            justify-content: center;
+            margin-top:50px;
+        }
+        .container{
+            background : white;
+            padding : 20px;
+            border-radius : 10px;
+            width : 320px;
+            box-shadow :0 0 10px rgba(0,0,0,0.1);
+        }
+        h1{
+            text-align : center;
+        }
+        #input-section{
+            display : flex;
+            gap : 5px;
+        }
+        input {
+            flex : 1;
+            padding : 8px;
+        }
+        button{
+            padding : 8px;
+            cursor : pointer;
+        }
+        ul{
+            list-style: none;
+            padding : 0;
+            margin-top : 15px;
+        }
+        li{
+            background : #eee;
+            margin : 5px 0;
+            padding : 8px;
+            display : flex;
+            align-items : center;
+            justify-content: space-between;
+            border-radius : 5px;
+        }
+        .completed{
+            text-decoration: line-through;
+            color : gray;
+        }
+        .tsak-left{
+            display : flex;
+            align-items : center;
+            gap :8px;
+        }
+        .delete-btn{
+            background: red;
+            color : white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List APP</h1>
+    <div id="input-section">
+        <input type="text" id="task" placeholder="Enter your task">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+    <ul id="tasklist"></ul>
+    </div>
+
+    <script>
+        function addTask(){
+            let input = document.getElementById('task')
+            let taskText = input.value.trim();
+
+            let li = document.createElement('li');
+            if(taskText===""){
+                alert("Enter the task");
+                return
+            }
+
+            let leftDiv = document.createElement('div')
+            leftDiv.className = "task-left"
+
+            let checkbox = document.createElement('input')
+            checkbox.type = "checkbox"
+
+            let span = document.createElement('span')
+            span.innerText = taskText
+
+            checkbox.onchange = function(){
+                span.classList.toggle("completed")
+            }
+
+            leftDiv.appendChild(checkbox)
+            leftDiv.appendChild(span)
+            let deleteBtn = document.createElement('button')
+            deleteBtn.className = "delete-btn"
+            deleteBtn.innerText = 'X'
+
+            deleteBtn.onclick = function(){
+                li.remove()
+            }
+
+            li.appendChild(leftDiv)
+            li.appendChild(deleteBtn)
+
+            document.getElementById('tasklist').appendChild(li)
+            input.value = ""
+        }
+    </script>
+</body>
+</html>

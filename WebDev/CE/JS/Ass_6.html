@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            height : 350px;
+            width : 250px;
+            background-color: gray;
+            opacity: 0.3;
+            border :2px solid black;
+            margin : 40px auto;
+            border-radius : 10px;
+            display : flex;
+            flex-wrap : wrap;
+            justify-content: center;
+            align-content: center;
+            gap : 5px;
+            padding : 10px;
+        }
+        #display{
+            background-color : rgb(0, 0, 0);
+            color: white;
+            width : 98%;
+            height : 40px;
+            border-radius : 10px;
+            margin-bottom: 0px;
+            margin-top : 10px;
+            text-align: right;
+            font-size : 20px;
+            display: flex;
+        }
+        button{
+            width : 50px;
+            height : 40px;
+            margin-top : 10px;
+            border-radius : 20px;
+            border : 2px solid black;
+            justify-content: center;
+            align-items: center;
+            margin : 10px auto;
+            font-weight: bold;
+            cursor : pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align : center;text-decoration: underline";>Calculator</h1>
+    <div id="container">
+        <input type="text" id="display">
+        <hr>
+        <button onclick="addValue(7)">7</button>
+        <button onclick="addValue(8)">8</button>
+        <button onclick="addValue(9)">9</button>
+        <button onclick="addValue('/')">/</button>
+        <br><br>
+        <button onclick="addValue(4)">4</button>
+        <button onclick="addValue(5)">5</button>
+        <button onclick="addValue(6)">6</button>
+        <button onclick="addValue('*')">X</button>
+        <br>
+        <button onclick="addValue(1)">1</button>
+        <button onclick="addValue(2)">2</button>
+        <button onclick="addValue(3)">3</button>
+        <button onclick="addValue('-')">-</button>
+        <br>
+        <button onclick="addValue(0)">0</button>
+        <button onclick="calculate()" style="font-size:bold">=</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="addValue('+')">+</button>
+        <br>
+    </div>
+
+    <script>
+        function addValue(value){
+            let display = document.getElementById('display');
+            display.value = display.value + value;
+        }
+        function calculate(){
+         let display = document.getElementById('display');
+         display.value = eval(display.value);
+        }
+        function clearDisplay(){
+            let display = document.getElementById("display");
+            display.value = ""
+        }
+    </script>
+</body>
+</html>

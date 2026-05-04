@@ -1,0 +1,1962 @@
+--------------------------------------------------
+--------Marvellous Platform Surveillance System--------
+Log Created at : Sat Feb  7 21:12:58 2026
+--------------------------------------------------
+
+----------System Report-------------
+CPU Usage : 7.2 %
+--------------------------------------------------
+--------------------------------------------------
+RAM Usage : 59.8 %
+--------------------------------------------------
+
+ Disk Usage Report 
+C:\ --> 54.7 % used
+D:\ --> 3.7 % used
+--------------------------------------------------
+
+Network Usage Report
+Sent : 0.98 MB
+Received : 1.21 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PID : 0
+Name : System Idle Process
+Username : NT AUTHORITY\SYSTEM
+Status : running
+Start Time  : 1970-01-01 05:01:00
+CPU % : 1413.80
+Memory percent % : 0.00
+PID : 4
+Name : System
+Username : NT AUTHORITY\SYSTEM
+Status : running
+Start Time  : 1970-01-01 05:01:00
+CPU % : 9.30
+Memory percent % : 0.05
+PID : 236
+Name : 
+Username : None
+Status : stopped
+Start Time  : 2026-02-01 16:02:48
+CPU % : 0.00
+Memory percent % : 0.38
+PID : 280
+Name : Registry
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:48
+CPU % : 0.00
+Memory percent % : 0.30
+PID : 460
+Name : cmd.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 20:02:53
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 884
+Name : smss.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:53
+CPU % : 0.00
+Memory percent % : 0.00
+PID : 1064
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 1072
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 1228
+Name : csrss.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:01
+CPU % : 0.00
+Memory percent % : 0.02
+PID : 1308
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 1316
+Name : wininit.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:01
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 1460
+Name : services.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:01
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 1480
+Name : LsaIso.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:01
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 1488
+Name : lsass.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:01
+CPU % : 0.00
+Memory percent % : 0.15
+PID : 1628
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.23
+PID : 1652
+Name : TextInputHost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:54
+CPU % : 0.00
+Memory percent % : 0.49
+PID : 1660
+Name : WUDFHost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 1680
+Name : RuntimeBroker.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:55
+CPU % : 0.00
+Memory percent % : 0.09
+PID : 1684
+Name : fontdrvhost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 1740
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:08
+CPU % : 0.00
+Memory percent % : 0.69
+PID : 1788
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 1.50
+Memory percent % : 0.13
+PID : 1856
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 1864
+Name : WUDFHost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 1948
+Name : NisSrv.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:10
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 1976
+Name : WUDFHost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 2012
+Name : dwm.exe
+Username : None
+Status : running
+Start Time  : 2026-02-06 02:02:18
+CPU % : 8.10
+Memory percent % : 0.59
+PID : 2100
+Name : WUDFHost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 2108
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 2176
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 2188
+Name : PAD.Console.Host.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:53
+CPU % : 3.90
+Memory percent % : 1.49
+PID : 2196
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 2200
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 2296
+Name : IntelCpHDCPSvc.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 2304
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 2312
+Name : WUDFHost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 2324
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:11
+CPU % : 0.00
+Memory percent % : 0.11
+PID : 2392
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:57
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 2456
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 2480
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.13
+PID : 2596
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 2668
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 2708
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 2748
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.02
+PID : 2816
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 2844
+Name : PAD.AutomationServer.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:55
+CPU % : 4.50
+Memory percent % : 0.65
+PID : 2900
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.12
+PID : 2928
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 3060
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.13
+PID : 3132
+Name : AppActions.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 15:02:42
+CPU % : 0.00
+Memory percent % : 0.27
+PID : 3136
+Name : spoolsv.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 3200
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:34
+CPU % : 0.00
+Memory percent % : 0.11
+PID : 3256
+Name : MemCompression
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 6.21
+PID : 3308
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 3360
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 3380
+Name : Code.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:06
+CPU % : 0.00
+Memory percent % : 1.95
+PID : 3428
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 3436
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 3448
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:08
+CPU % : 0.00
+Memory percent % : 0.24
+PID : 3500
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-07 21:02:19
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 3504
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.11
+PID : 3548
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.11
+PID : 3660
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 3704
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 3736
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 3796
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:02
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 3876
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.17
+PID : 3928
+Name : conhost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 15:02:28
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 3944
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.12
+PID : 3976
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 4052
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.11
+PID : 4112
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 4160
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.02
+PID : 4256
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:23
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 4280
+Name : DAX3API.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 4288
+Name : ElevocControlService.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 4296
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 1.80
+Memory percent % : 0.34
+PID : 4304
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.22
+PID : 4312
+Name : ipf_uf.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 4344
+Name : Lenovo.Modern.ImController.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.13
+PID : 4352
+Name : IntelAudioService.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 4364
+Name : ipfsvc.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 4380
+Name : LenovoUtilityService.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 4392
+Name : LNBITSSvc.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.08
+PID : 4404
+Name : servicehost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 6.80
+Memory percent % : 0.22
+PID : 4412
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 4420
+Name : LenovoVantageService.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.20
+PID : 4428
+Name : jhi_service.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 4448
+Name : MpDefenderCoreService.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.11
+PID : 4460
+Name : mysqld.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.02
+PID : 4476
+Name : RtkAudUService64.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 4496
+Name : OfficeClickToRun.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.19
+PID : 4532
+Name : RtkBtManServ.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 4560
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 4600
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:06
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 4608
+Name : UDClientService.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.20
+PID : 4616
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 4656
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:11
+CPU % : 0.00
+Memory percent % : 0.10
+PID : 4668
+Name : MsMpEng.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 1.32
+PID : 4680
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.12
+PID : 4688
+Name : WMIRegistrationService.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 4708
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.70
+Memory percent % : 0.12
+PID : 4872
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:06
+CPU % : 0.00
+Memory percent % : 0.13
+PID : 5152
+Name : RuntimeBroker.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:23
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 5348
+Name : mysqld.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 5440
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 5556
+Name : conhost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 5588
+Name : pet.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:08
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 5668
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:08
+CPU % : 0.00
+Memory percent % : 0.31
+PID : 5692
+Name : IntelGraphicsSoftware.Service.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:06
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 5696
+Name : RuntimeBroker.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:44
+CPU % : 0.00
+Memory percent % : 0.09
+PID : 5728
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:03
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 6256
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:11
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 6424
+Name : WmiPrvSE.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:04
+CPU % : 0.00
+Memory percent % : 0.12
+PID : 6760
+Name : unsecapp.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:04
+CPU % : 0.70
+Memory percent % : 0.05
+PID : 6916
+Name : SearchHost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:08
+CPU % : 0.00
+Memory percent % : 0.70
+PID : 6932
+Name : Locator.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:22
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 7000
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:30
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 7072
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:06
+CPU % : 0.00
+Memory percent % : 0.02
+PID : 7240
+Name : MidiSrv.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:05
+CPU % : 0.00
+Memory percent % : 0.02
+PID : 7548
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-07 20:02:46
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 7768
+Name : Code.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:39
+CPU % : 0.00
+Memory percent % : 0.29
+PID : 7856
+Name : SearchIndexer.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:17
+CPU % : 0.00
+Memory percent % : 0.13
+PID : 7868
+Name : PAD.BrowserNativeMessageHost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 15:02:28
+CPU % : 0.70
+Memory percent % : 0.38
+PID : 8084
+Name : AggregatorHost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:06
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 8092
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:06
+CPU % : 2.60
+Memory percent % : 0.17
+PID : 8188
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:47
+CPU % : 0.00
+Memory percent % : 0.00
+PID : 8260
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:14
+CPU % : 0.00
+Memory percent % : 0.11
+PID : 8448
+Name : PresentMonService.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:07
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 8456
+Name : conhost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:07
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 8768
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:14
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 8792
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:10
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 8980
+Name : FnHotkeyUtility.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:42
+CPU % : 0.00
+Memory percent % : 0.19
+PID : 9344
+Name : powershell.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:55
+CPU % : 0.00
+Memory percent % : 0.47
+PID : 9580
+Name : Code.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:06
+CPU % : 0.00
+Memory percent % : 0.62
+PID : 9840
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:23
+CPU % : 0.00
+Memory percent % : 0.09
+PID : 9852
+Name : unsecapp.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:42
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 9900
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:12
+CPU % : 0.00
+Memory percent % : 0.12
+PID : 9936
+Name : Copilot.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:59
+CPU % : 6.90
+Memory percent % : 2.35
+PID : 10268
+Name : svchost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:41
+CPU % : 0.00
+Memory percent % : 0.25
+PID : 10320
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:18
+CPU % : 0.00
+Memory percent % : 0.13
+PID : 10420
+Name : SecurityHealthSystray.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:03
+CPU % : 0.00
+Memory percent % : 0.08
+PID : 10712
+Name : OneDrive.Sync.Service.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:47
+CPU % : 0.00
+Memory percent % : 0.09
+PID : 10716
+Name : dllhost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 17:02:55
+CPU % : 0.00
+Memory percent % : 0.09
+PID : 10932
+Name : WidgetService.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:45
+CPU % : 0.00
+Memory percent % : 0.17
+PID : 10984
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:08
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 11052
+Name : Widgets.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:45
+CPU % : 0.00
+Memory percent % : 0.43
+PID : 11112
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:13
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 11120
+Name : SecurityHealthService.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:29
+CPU % : 0.00
+Memory percent % : 0.12
+PID : 11356
+Name : RuntimeBroker.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:34
+CPU % : 0.00
+Memory percent % : 0.11
+PID : 11364
+Name : DAX3API.exe
+Username : None
+Status : running
+Start Time  : 2026-02-07 14:02:41
+CPU % : 0.00
+Memory percent % : 0.09
+PID : 11432
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:13
+CPU % : 0.00
+Memory percent % : 0.20
+PID : 11536
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:31
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 11644
+Name : ShellHost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 20:02:45
+CPU % : 0.00
+Memory percent % : 0.31
+PID : 11808
+Name : LenovoVantage-(GenericMessagingAddin).exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:54
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 11848
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:51
+CPU % : 0.00
+Memory percent % : 0.17
+PID : 11896
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 22:02:14
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 12036
+Name : BraveCrashHandler.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:14
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 12056
+Name : BraveCrashHandler64.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:14
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 12264
+Name : RtkAudUService64.exe
+Username : None
+Status : running
+Start Time  : 2026-02-07 14:02:42
+CPU % : 0.00
+Memory percent % : 0.10
+PID : 12336
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:51
+CPU % : 0.00
+Memory percent % : 0.37
+PID : 12352
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 17:02:27
+CPU % : 0.00
+Memory percent % : 0.36
+PID : 12416
+Name : Code.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:22
+CPU % : 0.00
+Memory percent % : 0.60
+PID : 12636
+Name : StartMenuExperienceHost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:44
+CPU % : 0.00
+Memory percent % : 0.84
+PID : 12700
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:47
+CPU % : 0.00
+Memory percent % : 0.10
+PID : 13008
+Name : conhost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:42
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 13116
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:18
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 13228
+Name : taskhostw.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:41
+CPU % : 0.00
+Memory percent % : 0.15
+PID : 13248
+Name : RuntimeBroker.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:06
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 13532
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 22:02:06
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 13612
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-07 21:02:19
+CPU % : 0.00
+Memory percent % : 0.30
+PID : 13628
+Name : ctfmon.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:47
+CPU % : 0.00
+Memory percent % : 0.22
+PID : 14132
+Name : winlogon.exe
+Username : None
+Status : running
+Start Time  : 2026-02-06 02:02:18
+CPU % : 0.00
+Memory percent % : 0.14
+PID : 14240
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:47
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 14316
+Name : chrome.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 20:02:50
+CPU % : 0.00
+Memory percent % : 0.49
+PID : 14364
+Name : ONENOTEM.EXE
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:10
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 14428
+Name : LenovoVantage-(VantageCoreAddin).exe
+Username : None
+Status : running
+Start Time  : 2026-02-06 00:02:12
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 15140
+Name : conhost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:08
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 15296
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-03 14:02:18
+CPU % : 0.00
+Memory percent % : 0.02
+PID : 15572
+Name : dllhost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 17:02:55
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 15672
+Name : CrossDeviceService.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:42
+CPU % : 0.00
+Memory percent % : 0.52
+PID : 16132
+Name : msedge.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 15:02:28
+CPU % : 0.00
+Memory percent % : 0.11
+PID : 16144
+Name : FileCoAuth.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 17:02:24
+CPU % : 0.00
+Memory percent % : 0.15
+PID : 16228
+Name : RtkAudUService64.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:18
+CPU % : 0.00
+Memory percent % : 0.11
+PID : 16264
+Name : AppProvisioningPlugin.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:21
+CPU % : 0.00
+Memory percent % : 0.05
+PID : 16280
+Name : conhost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:21
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 16300
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:30
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 16460
+Name : chrome.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 20:02:39
+CPU % : 0.00
+Memory percent % : 0.62
+PID : 17004
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-03 12:02:36
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 17108
+Name : AutoModeDetect.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:42
+CPU % : 0.00
+Memory percent % : 0.09
+PID : 17120
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:08
+CPU % : 0.50
+Memory percent % : 0.25
+PID : 17440
+Name : Code.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:38
+CPU % : 9.50
+Memory percent % : 1.02
+PID : 17628
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 22:02:44
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 17672
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:07
+CPU % : 0.00
+Memory percent % : 0.14
+PID : 17824
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 16:02:07
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 17984
+Name : chrome.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 20:02:49
+CPU % : 0.00
+Memory percent % : 0.33
+PID : 18104
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-01 22:02:14
+CPU % : 0.00
+Memory percent % : 0.02
+PID : 18228
+Name : svchost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:41
+CPU % : 0.00
+Memory percent % : 0.21
+PID : 18692
+Name : PhoneExperienceHost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:02
+CPU % : 0.00
+Memory percent % : 0.95
+PID : 18768
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:51
+CPU % : 0.00
+Memory percent % : 0.09
+PID : 18784
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:23
+CPU % : 0.00
+Memory percent % : 0.02
+PID : 19304
+Name : svchost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:48
+CPU % : 0.00
+Memory percent % : 0.11
+PID : 19320
+Name : fontdrvhost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-06 02:02:18
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 19348
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:51
+CPU % : 0.50
+Memory percent % : 0.52
+PID : 19512
+Name : Code.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:39
+CPU % : 17.40
+Memory percent % : 2.80
+PID : 19536
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:08
+CPU % : 0.00
+Memory percent % : 0.08
+PID : 19692
+Name : uihost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:42
+CPU % : 0.50
+Memory percent % : 0.24
+PID : 19744
+Name : backgroundTaskHost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:50
+CPU % : 0.00
+Memory percent % : 0.03
+PID : 19864
+Name : Code.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:43
+CPU % : 1.50
+Memory percent % : 0.67
+PID : 19896
+Name : chrome.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 21:02:38
+CPU % : 0.00
+Memory percent % : 0.24
+PID : 20120
+Name : conhost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:43
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 20228
+Name : svchost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:41
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 20260
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:11
+CPU % : 0.00
+Memory percent % : 0.24
+PID : 20416
+Name : SDXHelper.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 16:02:23
+CPU % : 0.00
+Memory percent % : 0.20
+PID : 20540
+Name : UserOOBEBroker.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:42
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 20560
+Name : msedge.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 15:02:28
+CPU % : 0.00
+Memory percent % : 0.08
+PID : 20660
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:08
+CPU % : 0.00
+Memory percent % : 0.12
+PID : 20676
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:47
+CPU % : 0.00
+Memory percent % : 0.09
+PID : 20812
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-07 21:02:19
+CPU % : 0.00
+Memory percent % : 0.11
+PID : 20876
+Name : WindowsPackageManagerServer.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 17:02:55
+CPU % : 0.00
+Memory percent % : 0.18
+PID : 20880
+Name : explorer.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:41
+CPU % : 0.00
+Memory percent % : 2.11
+PID : 20912
+Name : PAD.BridgeToUIAutomation2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:55
+CPU % : 0.00
+Memory percent % : 0.27
+PID : 20992
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:47
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 21064
+Name : msedge.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 15:02:28
+CPU % : 0.00
+Memory percent % : 0.24
+PID : 21088
+Name : LenovoVantage-(LenovoServiceBridgeAddin).exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:11
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 21224
+Name : chrome.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 20:02:49
+CPU % : 0.00
+Memory percent % : 1.54
+PID : 21248
+Name : Code.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:39
+CPU % : 10.70
+Memory percent % : 1.14
+PID : 21464
+Name : svchost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:41
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 21496
+Name : conhost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:08
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 21540
+Name : CrossDeviceResume.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:42
+CPU % : 0.00
+Memory percent % : 0.36
+PID : 21808
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:23
+CPU % : 0.00
+Memory percent % : 0.01
+PID : 21872
+Name : msedge.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 15:02:28
+CPU % : 0.00
+Memory percent % : 0.27
+PID : 21944
+Name : python.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 21:02:47
+CPU % : 92.50
+Memory percent % : 0.15
+PID : 22072
+Name : MessagingPlugin.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:43
+CPU % : 0.00
+Memory percent % : 0.23
+PID : 22096
+Name : ms-teams.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:22
+CPU % : 0.00
+Memory percent % : 0.20
+PID : 22184
+Name : conhost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:55
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 22284
+Name : BatteryWidgetHost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:49
+CPU % : 0.00
+Memory percent % : 0.28
+PID : 22512
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-07 18:02:59
+CPU % : 0.00
+Memory percent % : 0.20
+PID : 22740
+Name : chrome.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 20:02:39
+CPU % : 0.50
+Memory percent % : 1.33
+PID : 22752
+Name : conhost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:55
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 22804
+Name : RuntimeBroker.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:50
+CPU % : 0.00
+Memory percent % : 0.15
+PID : 22876
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:47
+CPU % : 0.00
+Memory percent % : 0.04
+PID : 23120
+Name : chrome.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 20:02:49
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 23252
+Name : browserhost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 20:02:53
+CPU % : 0.00
+Memory percent % : 0.10
+PID : 23276
+Name : conhost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 20:02:53
+CPU % : 0.00
+Memory percent % : 0.08
+PID : 23284
+Name : chrome.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 20:02:49
+CPU % : 0.00
+Memory percent % : 1.05
+PID : 23392
+Name : WmiApSrv.exe
+Username : None
+Status : running
+Start Time  : 2026-02-07 15:02:51
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 23432
+Name : chrome.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 20:02:49
+CPU % : 0.00
+Memory percent % : 0.13
+PID : 23452
+Name : svchost.exe
+Username : None
+Status : running
+Start Time  : 2026-02-03 14:02:19
+CPU % : 0.00
+Memory percent % : 0.02
+PID : 23528
+Name : svchost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:41
+CPU % : 0.00
+Memory percent % : 0.10
+PID : 23784
+Name : powershell.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:08
+CPU % : 0.00
+Memory percent % : 0.35
+PID : 23820
+Name : FnHotkeyCapsLKNumLK.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:41
+CPU % : 0.00
+Memory percent % : 0.10
+PID : 23852
+Name : LenovoVantage-(SmartDisplayAddin).exe
+Username : None
+Status : running
+Start Time  : 2026-02-07 16:02:20
+CPU % : 0.50
+Memory percent % : 0.04
+PID : 24440
+Name : ApplicationFrameHost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:41
+CPU % : 0.00
+Memory percent % : 0.27
+PID : 24468
+Name : chrome.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 20:02:53
+CPU % : 0.00
+Memory percent % : 2.62
+PID : 24660
+Name : svchost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:27
+CPU % : 0.00
+Memory percent % : 0.09
+PID : 24868
+Name : msedge.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 15:02:27
+CPU % : 0.00
+Memory percent % : 0.77
+PID : 25076
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:51
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 25272
+Name : chrome.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 21:02:12
+CPU % : 0.00
+Memory percent % : 0.19
+PID : 25364
+Name : Code.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:40
+CPU % : 0.00
+Memory percent % : 0.60
+PID : 25508
+Name : python3.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 21:02:47
+CPU % : 0.00
+Memory percent % : 0.09
+PID : 25780
+Name : csrss.exe
+Username : None
+Status : running
+Start Time  : 2026-02-06 02:02:18
+CPU % : 0.50
+Memory percent % : 0.05
+PID : 25828
+Name : msedgewebview2.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:23
+CPU % : 0.00
+Memory percent % : 0.11
+PID : 25832
+Name : ipf_helper.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:41
+CPU % : 0.00
+Memory percent % : 0.08
+PID : 25888
+Name : RuntimeBroker.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:45
+CPU % : 0.00
+Memory percent % : 0.28
+PID : 26072
+Name : unsecapp.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 17:02:32
+CPU % : 0.00
+Memory percent % : 0.06
+PID : 26104
+Name : svchost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:45
+CPU % : 0.00
+Memory percent % : 0.14
+PID : 26344
+Name : msedge.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 15:02:28
+CPU % : 0.00
+Memory percent % : 0.23
+PID : 26548
+Name : OneDrive.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:48
+CPU % : 0.00
+Memory percent % : 0.75
+PID : 27032
+Name : Code.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:39
+CPU % : 0.00
+Memory percent % : 0.21
+PID : 27228
+Name : cmd.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 15:02:28
+CPU % : 0.00
+Memory percent % : 0.07
+PID : 27236
+Name : svchost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:43
+CPU % : 0.00
+Memory percent % : 0.17
+PID : 27544
+Name : SystemSettings.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : stopped
+Start Time  : 2026-02-07 14:02:41
+CPU % : 0.00
+Memory percent % : 0.02
+PID : 27580
+Name : ShellExperienceHost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : stopped
+Start Time  : 2026-02-07 14:02:49
+CPU % : 0.00
+Memory percent % : 0.50
+PID : 27584
+Name : Code.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 18:02:09
+CPU % : 0.00
+Memory percent % : 4.23
+PID : 27620
+Name : sihost.exe
+Username : LAPTOP-INHNNCUN\ABHAY
+Status : running
+Start Time  : 2026-02-07 14:02:41
+CPU % : 0.00
+Memory percent % : 0.31
+--------------------------------------------------
+--------------End Of Log File--------------------------------------------------------------------

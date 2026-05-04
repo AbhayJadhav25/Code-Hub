@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family : Arial, Helvetica, sans-serif;
+            margin : 40px;
+        }
+
+        input , TextArea{
+            width : 90%;
+            padding : 10px;
+            margin : 8px 0;
+        }
+        button{
+            padding :8px 12px;
+            margin-top : 5px;
+        }
+        .result{
+            font-weight : bold;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="email" placeholder="Enter your Email">
+    <button onclick="emailValidate()">Validate Email</button>
+    <p id="emailResult" class="result"></p>
+
+    <input type="text" id="mobile" placeholder="Enter your number">
+    <button onclick="mobileValidate()">Validate Number</button>
+    <p id="mobileResult" class="result"></p>
+
+    <input type="text" id="pass" placeholder="Enter password">
+    <button onclick="passwordValidate()">Validate Password</button>
+    <p id="passResult" class="result"></p>
+
+    <textarea id="number" placeholder="Enter text"></textarea>
+    <button onclick="getNumber()">Get Numbers</button>
+    <p id="numbers" class="result"></p>
+
+    <textarea id="cleaner" placeholder="Enter text"></textarea>
+    <button onclick="cleanText()">Get Clean Text</button>
+    <p id="text" class="result"></p>
+
+    <script>
+        function emailValidate(){
+            let email = document.getElementById("email").value;
+            let pattern = /^[^\s@]+@+[^\s@]+\.+[^s@]+$/
+
+            if(pattern.test(email)){
+                document.getElementById('emailResult').innerText = "Valid Email";
+            }else{
+                document.getElementById('emailResult').innerText = "Invalid Email";
+            }
+        }
+
+        function mobileValidate(){
+            let number = document.getElementById("mobile").value;
+            let pattern = /^\d{10}$/
+
+            if(pattern.test(number)){
+                document.getElementById('mobileResult').innerText = "Valid Mobile Number";
+            }else{
+                document.getElementById('mobileResult').innerText = "Invalid Mobile Number";
+            }
+        }
+
+        function passwordValidate(){
+            let password = document.getElementById('pass').value;
+            let pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/
+
+            if(pattern.test(password)){
+                document.getElementById('passResult').innerText = "Valid Password";
+            }else{
+                document.getElementById('passResult').innerText = "Inalid Password . Password must contain at least one uppercase , one lowercase and one digit. it must be 8 characters.";
+            }
+        }
+
+        function getNumber(){
+            let text = document.getElementById('number').value;
+            let num = text.match(/\d+/g);
+
+            if(num){
+                document.getElementById('numbers').innerText = "Numbers Found : "+num.join(", ");
+            }else{
+                document.getElementById('numbers').innerText = "Numbers Not FOund";
+            }
+        }
+
+        function cleanText(){
+            let inputText = document.getElementById("cleaner").value;
+            let clean = inputText.replace(/\s+/g , " ").trim();
+
+            document.getElementById('cleaner').value = clean;
+            document.getElementById('text').innerText = "Extra Spaces are removed";
+
+        }
+    </script>
+</body>
+</html>

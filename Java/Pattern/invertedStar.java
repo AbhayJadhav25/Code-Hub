@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class invertedStar {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int row = sc.nextInt();
+    int cols = sc.nextInt();
+
+    for (int line = 1; line <= row; line++) {
+      for (int star = 1; star <= row - line + 1; star++) {
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+  }
+}

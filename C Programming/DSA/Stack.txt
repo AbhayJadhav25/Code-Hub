@@ -1,0 +1,474 @@
+//#Heade.h
+struct stack
+{
+  int size;
+  int top;
+  int *arr;
+};
+struct expression
+{
+  int size;
+  int top;
+  char *arr;
+};
+
+int isEmpty(struct stack *s);
+int isFull(struct stack *s);
+int push(struct stack *s, int value);
+int pop(struct stack *s);
+int peek(struct stack *s);
+void display(struct stack *s);
+
+int isEmptyExp(struct expression *e);
+int isFullExp(struct expression *e);
+int pushExp(struct expression *e, char value);
+char popExp(struct expression *e);
+
+//Functions.c
+#include <stdio.h>
+#include "Header.h"
+
+int isEmptyExp(struct expression *e)
+{
+  if (e->top == -1)
+  {
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
+}
+
+int isFullExp(struct expression *e)
+{
+  if (e->top == e->size - 1)
+  {
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
+}
+
+int pushExp(struct expression *e, char value)
+{
+  if (isFullExp(e))
+  {
+    return 0;
+  }
+  else
+  {
+    e->top++;
+    e->arr[e->top] = value;
+    return 1;
+  }
+}
+
+char popExp(struct expression *e)
+{
+  int val;
+  if (isEmptyExp(e))
+  {
+    return '\0';
+  }
+  else
+  {
+    val = e->arr[e->top];
+    e->top--;
+    return val;
+  }
+}
+
+//stack implementation
+#include <stdio.h>
+#include <stdlib.h>
+#include "Header.h"
+int main()
+{
+  int n, i, choice, ans, value;
+  struct stack *s;
+  s = (struct stack *)malloc(sizeof(struct stack));
+  s->top = -1;
+  s->size = 5;
+  s->arr = (int *)malloc(s->size * sizeof(int));
+  printf("Enter initial size of stack (<=10) : ");
+  scanf("%d", &n);
+
+  printf("enter %d Values in stack \n", n);
+  for (i = 0; i < n; i++)
+  {
+    printf("Enter Number = ");
+    scanf("%d", &(s->arr[i]));
+    s->top++;
+  }
+
+  printf("------Stack Menu------\n");
+  printf("1 : Push \n2 : Pop\n3 : Peek\n4 : Display\n5 : Exit\n");
+
+  do
+  {
+    printf("Enter Choice : ");
+    scanf("%d", &choice);
+
+    switch (choice)
+    {
+    case 1:
+      printf("Enter Value to push : ");
+      scanf("%d", &value);
+      ans = push(s, value);
+
+      if (ans)
+      {
+        printf("Value pushed successfully\n");
+      }
+      else
+      {
+        printf("Stack is overflow\n");
+      }
+      break;
+
+    case 2:
+      if (pop(s))
+      {
+        printf("Valued Popped Successfully\n");
+      }
+      else
+      {
+        printf("Stack is underflow\n");
+      }
+      break;
+
+    case 3:
+      ans = peek(s);
+      if (ans)
+      {
+        printf("Topped Value : %d\n", ans);
+      }
+      else
+      {
+        printf("Stack is underflow\n");
+      }
+      break;
+
+    case 4:
+      display(s);
+      break;
+    }
+  } while (choice != 5);
+  return 0;
+}
+
+//Parthensis Checking
+#include <stdio.h>
+#include "Header.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include "Header.h"
+
+int isEmptyExp(struct expression *e)
+{
+  if (e->top == -1)
+  {
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
+}
+
+int isFullExp(struct expression *e)
+{
+  if (e->top == e->size - 1)
+  {
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
+}
+
+int pushExp(struct expression *e, char value)
+{
+  if (isFullExp(e))
+  {
+    return 0;
+  }
+  else
+  {
+    e->top++;
+    e->arr[e->top] = value;
+    return 1;
+  }
+}
+
+char popExp(struct expression *e)
+{
+  int val;
+  if (isEmptyExp(e))
+  {
+    return '\0';
+  }
+  else
+  {
+    val = e->arr[e->top];
+    e->top--;
+    return val;
+  }
+}
+
+int checkParenthesis(struct expression *e, char *exp)
+{
+  int i;
+
+  for (i = 0; exp[i] != '\0'; i++)
+  {
+    char ch = exp[i];
+    if (ch == '(' || ch == '{' || ch == '[' || ch == '<')
+    {
+      pushExp(e, ch);
+    }
+    else if (ch == ')' || ch == '}' || ch == ']' || ch == '>')
+    {
+      if (isEmptyExp(e))
+      {
+        return 0;
+      }
+      char topped = popExp(e);
+      if ((topped == '(' && ch != ')') || (topped == '[' && ch != ']') || (topped == '{' && ch != '}') || (topped == '<' && ch != '>'))
+      {
+        return 0;
+      }
+    }
+  }
+  return isEmptyExp(e);
+}
+int main()
+{
+  char exp[100];
+  int ans;
+  struct expression *e;
+  e = (struct expression *)malloc(sizeof(struct expression));
+  e->top = -1;
+  e->size = 100;
+  e->arr = (char *)malloc(e->size * sizeof(char));
+
+  printf("Enter Expression : ");
+  fgets(exp, sizeof(exp), stdin);
+
+  ans = checkParenthesis(e, exp);
+  if (ans)
+  {
+    printf("%s is Balanced Expression.\n", exp);
+  }
+  else
+  {
+    printf("%s is not Balanced Expression.\n", exp);
+  }
+  return 0;
+}
+
+
+//Prefix to postix
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+struct stack
+{
+  int size;
+  int top;
+  char **str;
+};
+int isEmpty(struct stack *s)
+{
+  return (s->top == -1);
+}
+
+int isFull(struct stack *s)
+{
+  return (s->top == s->size - 1);
+}
+void push(struct stack *s, char *val)
+{
+  if (!isFull(s))
+  {
+    s->str[++s->top] = val;
+  }
+}
+char *pop(struct stack *s)
+{
+  if (!isEmpty(s))
+  {
+    return s->str[s->top--];
+  }
+  return NULL;
+}
+int isOperator(char ch)
+{
+  return (ch == '+' || ch == '-' || ch == '*' ||
+          ch == '/' || ch == '^' || ch == '%');
+}
+void preToPost(struct stack *s, char *exp)
+{
+  int n = strlen(exp);
+  for (int i = n - 1; i >= 0; i--)
+  {
+    char ch = exp[i];
+    if (isOperator(ch))
+    {
+      char *t1 = pop(s);
+      char *t2 = pop(s);
+
+      char *temp = (char *)malloc(strlen(t1) + strlen(t2) + 2);
+      strcpy(temp, t1);
+      strcat(temp, t2);
+
+      int l = strlen(temp);
+      temp[l] = ch;
+      temp[l + 1] = '\0';
+      push(s, temp);
+    }
+    else
+    {
+      char *opr = (char *)malloc(2);
+      opr[0] = ch;
+      opr[1] = '\0';
+      push(s, opr);
+    }
+  }
+  printf("Postfix Conversion : %s\n", pop(s));
+}
+int main()
+{
+  struct stack *s;
+  char exp[100];
+  s = malloc(sizeof(struct stack));
+  s->top = -1;
+  s->size = 100;
+  s->str = (char **)malloc(s->size * sizeof(char *));
+
+  printf("Enter prefix Expression : ");
+  scanf("%s", exp);
+
+  printf("Expression = %s\n", exp);
+  preToPost(s, exp);
+
+  free(s->str);
+  free(s);
+  return 0;
+}
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+struct node
+{
+  int data;
+  struct node *next;
+};
+
+struct node *createNode()
+{
+  struct node *h1;
+  h1 = malloc(sizeof(struct node));
+  printf("Enter a Data : ");
+  scanf("%d", h1->data);
+  h1->next = 0;
+  return h1;
+}
+struct node *start = 0;
+
+insertStart()
+{
+  struct node *k1;
+  k1 = createNode();
+
+  if (start == 0)
+  {
+    start = k1;
+  }
+  else
+  {
+    k1->next = start;
+    start = k1;
+  }
+}
+insertEnd() {}
+insertMiddle() {}
+deleteStart() {}
+deleteEnd() {}
+deleteMiddle()
+{
+  struct node *temp;
+  temp = start;
+  while (temp != 0)
+  {
+    printf("%d -> ", temp->data);
+    temp = temp->next;
+  }
+  printf("\n");
+}
+
+int main()
+{
+  int ch;
+  printf("\n1 : Insertion from start.\n2 : Insertion from end.\n3 :  Insertion from middle. \n4 : Deletion from start\n5 : Deletion from end\6 : Deletion from middle\n7 : Display\n8: Exit");
+  while (1)
+  {
+    printf("\nEnter Your Choice : ");
+    scanf("%d", &ch);
+
+    switch (ch)
+    {
+    case 1:
+    {
+      insertStart();
+    }
+    break;
+    case 2:
+    {
+      insertEnd();
+    }
+    break;
+    case 3:
+    {
+      insertMiddle();
+    }
+    break;
+    case 4:
+    {
+      deleteStart();
+    }
+    break;
+    case 5:
+    {
+      deleteEnd();
+    }
+    break;
+    case 6:
+    {
+      deleteMiddle();
+    }
+    break;
+    case 7:
+    {
+      display();
+    }
+    break;
+    case 8:
+    {
+      exit(0);
+    }
+    break;
+    default:
+      printf("\nEnter Valid Choice.\n");
+    }
+  }
+  return 0;
+}

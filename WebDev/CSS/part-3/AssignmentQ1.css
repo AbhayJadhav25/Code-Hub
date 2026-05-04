@@ -1,0 +1,37 @@
+/* question1 */
+/* div{
+    height:150px;
+    width:300px;
+    background-color:grey;
+    border : 5px dotted black;
+    margin : 20px 1em 40px 2em;
+    padding : 1em;
+} */
+
+ /* question2
+.box{
+    height:100px;
+    width:100px;
+    background-color:pink;
+    border-radius:50%;
+    border:2pc solid black;
+    display:inline-block;
+} */
+
+/*  question 3
+li{
+    display:inline-block;
+}
+The browser no longer treats the element as a list item with a marker—it treats it as a generic inline element, like a <span>, and the bullet point is not rendered. */
+
+li {
+  display: inline;
+  position: relative;
+  padding-left: 1em;
+}
+li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
