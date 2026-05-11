@@ -14,5 +14,12 @@ class JaggedArray{
             }
             System.out.println();
         }
+System.out.println("==========================================");
+        for(int n[] : brr){
+            for(int m : n){
+                System.out.print(m+"\t");
+            }
+            System.out.println();
+        }
     }
 }
