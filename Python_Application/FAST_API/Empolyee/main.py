@@ -22,7 +22,7 @@ class CreateEmployee(BaseModel):
     id : int
     name : str
     email : EmailStr
-    departmen : str
+    department : str
     salary : float
 
 @employee_router.get("")
@@ -49,6 +49,31 @@ def create_emp(employee : CreateEmployee):
     return JSONResponse(
         status_code=201  ,
         content={"message" : "Employee Created Successfully"}
+    )
+
+@employee_router.get('/view')
+def view_emp():
+    data = load_data()
+
+    if len(data)==0:
+        raise HTTPException(
+            status_code=404 , 
+            detail='Not data found'
+        )
+    
+    return data
+
+@employee_router.get('/view/{emp_id}')
+def view_emp_with_id(emp_id : int):
+    data = load_data()
+    
+    for emp in data :
+        if emp['id'] == emp_id:
+            return emp
+
+    raise HTTPException(
+        status_code=404 , 
+        detail="Employee not found."
     )
 
 app.include_router(employee_router)
