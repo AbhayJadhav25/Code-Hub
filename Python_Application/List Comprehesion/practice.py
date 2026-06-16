@@ -1,6 +1,4 @@
 #Q1 . Create a list of squares from 1–20.
-# Create all possible pairs from two lists.
-# Build a word-frequency preparation list.
 
 def Q1():
     result = [x**2 for x in range(1,21)]
@@ -166,8 +164,22 @@ def Q18():
          for item in list:
              for x in item:
                  print(x,end=" ")
-        
+
+# Create all possible pairs from two lists.
+def Q19():
+    nums1 = [1,2,3,4,5]
+    nums2 = [6,7,8,9]
+
+    result = [(nums1[x],nums2[y]) for x in range(len(nums1)) for y in range(len(nums2))]
+    print(result)
+
+def Q20():
+    lst = ["food was good", "food was bad", "food was not good"]
+    words = " ".join(lst).split()
+    print(words)
+    result = [(word , words.count(word)) for word in set(words)]
+    print(result)
 def main():
-    Q18()
+    Q20()
 if __name__ == "__main__":
     main()
