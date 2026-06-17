@@ -78,3 +78,16 @@ if does not exist -> create the key with the default value and return that value
 11) clear() -> removes all items from the dictionary . 
 
 12) del dict['key']  --> deletes key-values pair , Raise keyError if missing.
+
+## Memory model
+~ dictionary is a hash table , python compute a hash code for a key with hash() , then uses that hash to find a location in an internal array.
+
+~ key objects must be hashable because its hash value must stay stable during its lifetime.That is why immutable objects such as Strings , numbers , tuples of hashable items and frozensets can be used as keys while containers like list , dictionaries can't.
+
+## why dictionary keys are hashable?
+because python dictionary use hash table internally for fast lookup
+
+### use regular expression example
+import re
+sentence = "hello ! from Python !!?"
+word = re.findall(r'\w+' , sentence.lower())  #keep only words remove punctations and special chars.
