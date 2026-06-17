@@ -93,8 +93,58 @@ def Q6():
             result.append((value , dept))
 
     print(result)
-    
+
+#7) Write a function that groups a list of tuples like (name, city) into a dictionary of city → names.
+def Q7():
+    data = [
+    ("Amit", "Pune"),
+    ("Sneha", "Mumbai"),
+    ("Rahul", "Pune"),
+    ("Neha", "Delhi"),
+    ("Sagar", "Mumbai"),
+    ("Pooja", "Delhi"),
+    ("Rohit", "Pune")
+]
+    result = {}
+
+    for key , value in data:
+        result.setdefault(value , []).append(key)
+
+    print(result)
+
+#8Given a list of dictionaries, sort them by age using a key function.
+def Q8():
+    students = [
+    {"name": "Amit", "age": 22},
+    {"name": "Sneha", "age": 19},
+    {"name": "Rahul", "age": 25},
+    {"name": "Neha", "age": 20},
+    {"name": "Sagar", "age": 23}
+    ]
+
+    # students.sort(key = 'age')
+    result = {}
+    result = sorted(students , key = lambda x : x['age'])
+    print(result)
+
+#9)Given a dictionary, delete all entries whose values are None.
+def Q9():
+    student_data = {
+    "Amit": 75,
+    "Pooja": None,
+    "Rahul": 65,
+    "Sneha": None,
+    "Neha": 95,
+    "Sagar": 88,
+    "Kiran": None
+    }
+
+    result = {}
+    for key , value in student_data.items():
+        if value is not None:
+            result[key] = value
+    print(result)
 def main():
-    Q6()
+    Q9()
 if __name__ == "__main__":
     main()
