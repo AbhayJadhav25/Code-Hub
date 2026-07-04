@@ -10,4 +10,4 @@ print(id(acc))
 print(id(acc2))
 
 acc2.balance = 1200
-print(acc.balance)
+print(acc.balance)  
