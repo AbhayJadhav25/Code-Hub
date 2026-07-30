@@ -1,14 +1,11 @@
-from sys import getsizeof as size
-lst = [1,2,3]
-print(size(lst)) #88
+def function():
+    yield "First Statement"
+    yield "Second Statement"
+    yield "Third Statement"
 
-#here lst is iterable
+gen = function()
+print(gen)  #<generator object function at 0x000001E4228C4D50> so it just create generator object not call to the function
 
-x = range(1,4)
-print(size(x)) #44 x is iterator
-
-for num in lst:
-    print(num)
-
-for num in x:
-    print(num)
+print(next(gen))    #First Statement    actual calling
+for i in gen:
+    print(i)
