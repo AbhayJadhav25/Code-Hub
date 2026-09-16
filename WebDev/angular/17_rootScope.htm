@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = 'angular.min.js'></script>
+    </head>
+    <body ng-app = "myApp" >
+        <div ng-controller = 'myCtrl'>
+            <p>{{appName}} from Div1</p>
+            <p>{{localMessage}}</p>
+        </div>
+
+        <div ng-controller = "myCtrl2">
+            <p>{{globalMessage}}</p>
+        </div>
+        <div></div>
+        <script>
+            var app = angular.module('myApp' , [])
+            app.controller('myCtrl',function($scope , $rootScope){
+                $rootScope.appName = "My  Angular JS APP";
+                $scope.localMessage = 'Hello from Ctrl 1';
+            })
+
+            app.controller('myCtrl2' , function($scope , $rootScope){
+                $scope.globalMessage = $rootScope.appName;
+            })
+        </script>
+    </body>
+</html>

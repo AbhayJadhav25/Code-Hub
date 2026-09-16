@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app = 'myApp' ng-controller = 'myCtrl'>
+            <ul>
+                <li  ng-repeat = "stud in student">
+                    {{stud.name + ' '+stud.age }}
+                </li>
+            </ul>
+        </div>
+        <script>
+            var app = angular.module('myApp' , []).controller('myCtrl',function($scope){
+                $scope.student = [
+                    {name : "Abhay" , age : 20},
+                    {name : "Mayur" , age : 22},
+                    {name : "Bhim" , age : 22}
+                ]
+            })
+        </script>
+    </body>
+</html>

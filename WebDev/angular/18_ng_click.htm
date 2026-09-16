@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app = 'myApp' ng-controller = "myCtrl">
+            <h4 ng-show = "count>=0">Count : {{count}}</h4>
+            <button ng-click = "increase()">Increase</button>
+            <button ng-click = "decrease()">Decrease</button>
+        </div>
+        <script>
+            var app = angular.module('myApp' , []);
+            app.controller('myCtrl' , function($scope){
+                $scope.count = 0
+                $scope.increase = function(){
+                    $scope.count++;
+                }
+
+                $scope.decrease = function(){
+                    // if($scope.count > 0 ){
+                        $scope.count--;
+                    // }
+                }
+            })
+        </script>
+    </body>
+</html>

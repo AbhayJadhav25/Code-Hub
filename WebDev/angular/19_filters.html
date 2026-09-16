@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app = "myApp" ng-controller = "myCtrl">
+            <input type="text" ng-model = "date">
+<!-- 
+            1 . uppercase
+            <p>{{name | uppercase}}</p>
+
+            2 . lowercase
+             <p>{{name | lowercase}}</p> 
+
+            3. Currency 
+              <p>{{price | currency }}</p> $20
+              <p>{{price | currency : "₹"}}</p>  
+
+            4.number 
+             <p>{{price | number : 2}}</p>   
+
+            5.Date
+
+            <p>{{today | date : "MM/dd/yyyy"}}</p>  -->
+
+        </div>
+        <script>
+            var app = angular.module('myApp' , [])
+            app.controller('myCtrl' , function($scope){
+                // $scope.name = "Abhay"
+
+                // $scope.price = 20
+
+                $scope.today = new Date()
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="angular.min.js"></script>
+</head>
+<body>
+    <!-- First AngularJS App -->
+    <div id="Block1" ng-app = "AppOne" ng-controller="Controller1">
+        <p>City: {{city}}</p>
+    </div>
+
+    <!-- Second AngularJS App -->
+    <div id="Block2" ng-app = "AppTwo" ng-controller="Controller2">
+        <p>Country: {{country}}</p>
+    </div>
+
+    <script>
+        // First app
+        var appOne = angular.module('AppOne', []);
+        appOne.controller('Controller1', function($scope) {
+            $scope.city = "Pune";
+        });
+
+        // Second app
+        var appTwo = angular.module('AppTwo', []);
+        appTwo.controller('Controller2', function($scope) {
+            $scope.country = "India";
+        });
+
+        // Manually bootstrap each app
+        angular.bootstrap(document.getElementById('Block1'), ['AppOne']);
+        angular.bootstrap(document.getElementById('Block2'), ['AppTwo']);
+    </script>
+</body>
+</html>

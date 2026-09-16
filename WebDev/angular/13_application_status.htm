@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app = "">
+            <form name = 'myForm'>
+                <input name = 'username' ng-model = 'username' required> <br><br>
+
+                Valid - {{myForm.username.$valid}} <br><br>
+                Invalid - {{myForm.username.$invalid}} <br><br>
+                pristine - {{myForm.username.$pristine}} <br><br>
+                Dirty - {{myForm.username.$dirty}} <br><br>
+                Touched - {{myForm.username.$touched}} <br><br> 
+                Untouched - {{myForm.username.$untouched}} <br><br>
+            </form>
+        </div>
+    </body>
+</html>

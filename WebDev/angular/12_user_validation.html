@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="angular.min.js"></script>
+</head>
+<body>
+
+    <!--  1 required
+    <div ng-app="">
+        <form>
+            Name: <input type="text" ng-model="name" required>
+            <p>You entered: {{name}}</p>
+        </form>
+    </div> -->
+
+    <!-- 2 . minlength
+    <div ng-app = "">
+        <form>
+            Password : <input type="text" ng-model = "name" minlength="6" >
+            <p>Your Password is {{name}}</p>
+        </form>
+    </div> -->
+
+    <!-- 3.Gmail
+    <div ng-app = "">
+        <form name = 'myForm'>
+            Email : <input type="email" name = "email" ng-model = "email" required>
+            <span ng-show = "myForm.email.$valid">Valid Email</span>
+        </form>
+    </div> -->
+
+    <div ng-app = "">
+        <form>
+           <input ng-model="age" ng-pattern="/^[0-9]+$/">
+            <p>Your age is {{age}}</p>
+        </form>
+    </div>
+</body>
+</html>

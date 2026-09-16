@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app = 'myApp' ng-controller = 'myCtrl'>
+            <table style = "border :'1';width : '100%'">
+                <tr>
+                    <th ng-click = "orderByMe('name')">Name</th>
+                    <th ng-click = "orderByMe('country')">Country</th>
+                </tr>
+                <tr ng-repeat = "person in persons | orderBy :myOrderBy : true">
+                    <td>{{person.name}}</td>
+                    <td>{{person.country}}</td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            var app = angular.module('myApp' , [])
+            app.controller('myCtrl' , function($scope){
+                $scope.persons = [
+                    {name : 'Abhay' , country : 'Bharat'} , 
+                    {name : 'Aditya' , country : 'USA'} , 
+                    {name : 'Om' , country : 'Paris'} , 
+                    {name : 'Sai' , country : 'Canada'} 
+                ];
+
+                $scope.orderByMe = function(x){
+                    $scope.myOrderBy = x;
+                }
+            })
+
+        </script>
+    </body>
+</html>

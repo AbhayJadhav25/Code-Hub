@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "angular.min.js"></script>
+    </head>
+    <div ng-app = ""  ng-init = "person = [
+        {name : 'Abhay' , age : 21},
+        {name : 'Om' , age : 20},
+        {name : 'Sai' , age : 18}
+    ]">
+
+    <ul ng-repeat = "p in person">
+
+        <li ng-bind = "p.name + ' ' +p.age"></li>
+    </ul>
+    </div>
+</html>

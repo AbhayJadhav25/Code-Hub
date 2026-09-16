@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "angular.min.js"></script>
+    </head>
+    <body ng-app = 'myApp'>
+
+        <p>Color in App : {{color}}</p>
+        
+        <div ng-controller = 'myCtrl'>
+            <p>Color in Controller : {{color}}</p>
+        </div>
+
+        <p>App Color is still : {{color}}</p>
+        <script>
+            var app = angular.module('myApp' , [])
+            app.run(function($rootScope){
+                $rootScope.color = "blue"
+            })
+
+            app.controller('myCtrl' , function($scope){
+                $scope.color = "Red";
+            })
+        </script>
+    </body>
+</html>
