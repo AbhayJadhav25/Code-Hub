@@ -1,0 +1,113 @@
+<html ng-app = 'myApp'>
+    <head>
+        <title>Question 2</title>
+        <script src = "angular.min.js"></script>
+        <link rel="stylesheet" href="shoppingCart.css">
+    </head>
+    <body ng-controller = 'myCtrl'>
+            <h1>My Shopping Store</h1>
+            <h2>Available Products</h2>
+        <div class = 'products'>
+            <div class = 'product' ng-repeat = 'prod in products'>
+                <h3>{{prod.name}}</h3>
+                <p>Price : Rs{{prod.price}}</p>
+                <label>Quantity : 
+                    <input type="number" ng-model = "prod.quantity" min = "1" step = "1">
+                </label>
+                <br>
+                <button ng-click = "addToCart(prod)">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class = "cart">
+            <h2>My Cart</h2>
+
+            <p ng-if="cart.length==0">Cart is empty</p>
+            <table ng-if = "cart.length > 0">
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Action</th>
+                </tr>
+
+                <tr ng-repeat = 'item in cart'>
+                    <td>{{item.name}}</td>
+                    <td>Rs.{{item.price}}</td>
+                    <td>
+                        <button ng-click = "decreaseQty(item)">-</button>
+                        {{item.quantity}}
+                        <button ng-click = "increaseQty(item)">+</button>
+                    </td>
+                    <td>Rs.{{item.price * item.quantity}}</td>
+                    <td>
+                        <button ng-click = "removeFromCart(item)">Remove</button>
+                    </td>
+                </tr>
+            </table>
+
+            <h3>Total Bill : Rs.{{total()}}</h3>
+        </div>
+        <script>
+            var app = angular.module('myApp' , [])
+            app.controller('myCtrl' , function($scope){
+                $scope.products = [
+                    { id: 1, name: "Laptop", price: 50000, quantity: 1 },
+                    { id: 2, name: "Smartphone", price: 20000, quantity: 1 },
+                    { id: 3, name: "Headphones", price: 1500, quantity: 1 },
+                    { id: 4, name: "Keyboard", price: 800, quantity: 1 },
+                    { id: 5, name: "Mouse", price: 500, quantity: 1 }
+                ];
+
+                $scope.cart = [];
+
+                $scope.addToCart = function(product){
+
+                    var found = $scope.cart.find(function(item){
+                        return item.id == product.id;
+                    });
+
+                    if(found){
+                        found.quantity++;
+                    }else{
+                        $scope.cart.push({
+                            id : product.id ,
+                            name : product.name,
+                            price : product.price,
+                            quantity : 1
+                        });
+                    }
+                };
+
+                //remove product from cart
+                $scope.removeFromCart = function(item){
+                    $scope.cart.splice($scope.cart.indexOf(item) , 1)
+                };
+
+                $scope.total = function(){
+                    var sum = 0;
+
+                    $scope.cart.forEach(function(item){
+                        sum+=item.price * item.quantity
+                    });
+                    return sum;
+                };
+
+                // Increase quantity
+                $scope.increaseQty = function(item) {
+                    item.quantity++;
+                };
+
+                // Decrease quantity
+                $scope.decreaseQty = function(item) {
+                    if (item.quantity > 1) {
+                        item.quantity--;
+                    } else {
+                        $scope.removeFromCart(item);
+                    }
+                };
+            });
+        </script>
+    </body>
+</html>
