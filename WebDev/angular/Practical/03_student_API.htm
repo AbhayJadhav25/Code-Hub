@@ -1,0 +1,92 @@
+<html ng-app = 'studentApp'>
+    <head>
+        <title>Question 3</title>
+        <script src="angular.min.js"></script>
+        <style>
+            body{
+                font-family : Arial, Helvetica, sans-serif;
+                margin : 25px;
+            }
+
+            .container{
+                max-width : 800px;
+                margin :  auto;
+            }
+
+            input{
+                padding : 8px;
+                width : 250px;
+                margin-bottom : 15px;
+            }
+            table{
+                width : 100%;
+                border-collapse: collapse;
+            }
+            th,td{
+                border : 1px solid #ccc;
+                padding : 10px;
+                text-align : left;
+            }
+            th{
+                background : #eee;
+            }
+            .error{
+                color : red
+            }
+        </style>
+    </head>
+    <body ng-controller = "myCtrl">
+        <div class="container">
+            <h1>Student Records</h1>
+            <input type="text" ng-model = "searchText" placeholder="search students..">
+
+            <p ng-if = "loading">Loading students...</p>
+            <p class = "error" ng-if = "errorMessage">{{errorMessage}}</p>
+
+            <table ng-if = "!loading && !errorMessage && students.length > 0">
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Marks</th>
+                </tr>
+                <tr ng-repeat = "stud in students | filter : searchText">
+                    <td>{{stud.rollNo}}</td>
+                    <td>{{stud.name}}</td>
+                    <td>{{stud.course}}</td>
+                    <td>{{stud.marks}}</td>
+                </tr>
+            </table>
+
+            <p ng-if = "!loading && !errorMessage && (students | filter:searchText).length===0">
+                No students
+            </p>
+        </div>
+        <script>
+            var app = angular.module('studentApp',[])
+            app.service('StudentService',function($http){
+                this.getStudents = function(){
+                    return $http.get("http://localhost:3000/student");
+                }
+            })
+
+            app.controller('myCtrl' , function($scope , StudentService){
+                $scope.students = [];
+                $scope.searchText = "";
+                $scope.loading = true;
+                $scope.errorMessage = "";
+
+                StudentService.getStudents()
+                .then(function(response){
+                    $scope.students = response.data;
+                })
+                .catch(function(){
+                    $scope.errorMessage = "Failed to load student records."
+                })
+                .finally(function(){
+                    $scope.loading = false;
+                })
+            })
+        </script>
+    </body>
+</html>
