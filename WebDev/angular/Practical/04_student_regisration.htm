@@ -1,0 +1,127 @@
+<html ng-app = 'myApp'>
+    <head>
+        <title>Form Validation</title>
+        <script src="angular.min.js"></script>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color:azure;
+                margin : 0;
+                padding: 30px;
+            }
+            .form{
+                width : 320px;
+                margin : 30px auto;
+                padding: 25px;
+                border :1px solid #ddd;
+                background-color : white;
+                border-radius : 8px;
+            }
+            h2{
+                text-align : center;
+                color : #243b55;
+            }
+            label{
+                display: block;
+                margin-top :15px;
+                margin-bottom : 5px;
+                font-size : 14px;
+                font-weight: bold;
+            }
+            input , select{
+                width : 80%;
+                padding : 9px;
+                box-sizing: border-box;
+                border : 1px solid black;
+                border-radius : 4px;
+            }
+
+            input:focus , select:focus{
+                outline : none;
+                border-color : #2563eb;
+            }
+
+            .error{
+                color : #dc2626;
+                font-size : 12px;
+                margin-top : 4px;
+            }
+            button{
+                width : 80%;
+                padding : 10px;
+                margin-top : 20px;
+                background-color: #2563eb;
+                color : white;
+                border : none;
+                border-radius : 4px;
+                cursor : pointer;
+            }
+
+            button:hover{
+                background-color : #1d4ed8;
+
+            }
+            button:disabled{
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body ng-controller = 'myCtrl'>
+        <h2>Student Registration</h2>
+        <div class = 'form'>
+            <form name = 'regForm' ng-submit = "register(regForm)" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id= "name"  name="name" ng-model="student.name" ng-minlength = "3" required>
+                <div class="error" ng-show="regForm.name.$touched && regForm.name.$invalid">
+                    Please Enter a name at least 3 characters.
+                </div>
+
+                <label for="roll_no">Roll No.</label>
+                <input type="number" id="roll_no" name="roll_no" ng-model="student.roll_no" ng-min="1" required>
+                <div class="error" ng-show="regForm.roll_no.$touched && regForm.roll_no.$invalid">
+                    Please Enter Valid Roll Number.
+                </div>
+
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email" ng-model="student.email" required>
+                <div class="error" ng-show="regForm.email.$touched && regForm.email.$invalid">
+                    Please Enter Valid Email address.
+                </div>
+
+                <label for="course">Course</label>
+                <select name="course" id="course" ng-model = 'student.course' required>
+                    <option value="">Select Course</option>
+                    <option value="MCA">MCA</option>
+                    <option value="MCS">MCS</option>
+                    <option value="DS">DS</option>
+                </select>
+                <div class="error" ng-show="regForm.course.$touched && regForm.course.$invalid">
+                    Please select a valid course
+                </div>
+
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" ng-model="student.gender" required>
+                    <option value="">Select gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div class="error" ng-show="regForm.gender.$touched && regForm.gender.$invalid">
+                    please Select a gender
+                </div>
+                <label for="mobile">Phone Number</label>
+                <input type="number" id="mobile" name="mobile" ng-pattern="/^[0-9]{10}$/" ng-model="student.mobile" required>
+                <div class="error" ng-show="regForm.mobile.$touched && regForm.mobile.$invalid">
+                    Please Enter 10 digit mobile number
+                </div>
+
+                <button type="submit" ng-disabled="regForm.$invalid">Submit</button>
+            </form>
+
+            <p ng-if = "submitted">
+                Student Registration Successful
+            </p>
+        </div>
+        <script src="04_validation.js"></script>
+    </body>
+</html>
